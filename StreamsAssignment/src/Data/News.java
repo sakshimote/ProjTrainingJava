@@ -8,6 +8,7 @@ public class News {
 	public String comment;
 	
 	
+	
 	@Override
 	public String toString() {
 		return "News [newsId=" + newsId + ", postedByUser=" + postedByUser + ", commentedByUser=" + commentedByUser

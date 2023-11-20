@@ -1,6 +1,7 @@
 package Data;
 
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -32,6 +33,13 @@ public class StreamsFilter {
 		List<Fruit> list1= DataDatabase.getAllFruits().stream().filter(fruit->fruit.getColor().equalsIgnoreCase("red")).sorted(Comparator.comparing(Fruit::getPrice)).collect(Collectors.toList());
 	return list1.stream().map(Fruit::getName).collect(Collectors.toList());
 	}
+	
+	public static List<News> newsIdHavingMaxComments(){
+return null;
+		
+	}
+	
+	
 	
 	
 	
