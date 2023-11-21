@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class MinMaxFinder {
 	
 	
-	public  int[] minMaxFinder(int[] arr) {
+	public static int[] findMinMax(int[] arr) {
 		int[] ans=new int[2];
 		
 		
