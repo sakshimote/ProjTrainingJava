@@ -1,6 +1,7 @@
 package com.example.demo;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -34,5 +35,35 @@ public class MinMaxFinderTest {
 	        int[] actualMinMax = MinMaxFinder.findMinMax(arr);
 	        assertArrayEquals(expectedMinMax, actualMinMax);
 	    }
+	    
+	    @Test
+	    public void findMinMaxWithPositiveIntegers2() {
+	        int[] arr = {1, 2, 3, 4, 5};
+
+	        MinMax minMax = MinMaxFinder.findMinMaxAnother(arr);
+	        assertEquals(1, minMax.getMin());
+	        assertEquals(5, minMax.getMax());
+	    }
+
+	    @Test
+	    public void findMinMaxWithNegativeIntegers2() {
+	        int[] arr = {-5, -4, -3, -2, -1};
+
+	        MinMax minMax = MinMaxFinder.findMinMaxAnother(arr);
+	        assertEquals(-5, minMax.getMin());
+	        assertEquals(-1, minMax.getMax());
+	    }
+
+	    @Test
+	    public void findMinMaxWithMixedIntegers2() {
+	        int[] arr = {-2, 3, -1, 5, -4};
+
+	        MinMax minMax = MinMaxFinder.findMinMaxAnother(arr);
+	        assertEquals(-4, minMax.getMin());
+	        assertEquals(5, minMax.getMax());
+	    }
+
+	    
+	    
 
 }

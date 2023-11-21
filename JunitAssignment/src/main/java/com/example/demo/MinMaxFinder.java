@@ -19,5 +19,14 @@ public class MinMaxFinder {
 		
 		return ans;
 	}
+	
+	
+	public static MinMax findMinMaxAnother(int[] arr) {
+		int max=Arrays.stream(arr).max().getAsInt();
+		int min=Arrays.stream(arr).min().getAsInt();
+		
+		MinMax minMax=new MinMax(min, max);
+		return minMax;
+	}
 
 }
