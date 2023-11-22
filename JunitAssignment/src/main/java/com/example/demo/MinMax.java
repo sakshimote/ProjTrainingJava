@@ -2,6 +2,8 @@ package com.example.demo;
 
 public class MinMax {
 	
+	
+	
 	private static int min;
 	private static int max;
 	

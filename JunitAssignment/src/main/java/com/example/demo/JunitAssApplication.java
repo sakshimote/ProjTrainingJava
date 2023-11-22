@@ -8,6 +8,8 @@ public class JunitAssApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(JunitAssApplication.class, args);
+		
+		System.out.println("check for git");
 	}
 
 }
