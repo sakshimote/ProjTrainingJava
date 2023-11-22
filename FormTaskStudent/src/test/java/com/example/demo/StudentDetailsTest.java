@@ -12,7 +12,8 @@ public class StudentDetailsTest {
 	public void checkName() {
 		
 		String expected=StudentDetails.checkName();
-		assertEquals("shri", expected);
+		String actual="shri";
+		assertEquals(actual, expected);
 		
 	}
 	
@@ -20,14 +21,16 @@ public class StudentDetailsTest {
 	public void checkAge() {
 		
 		int expected=StudentDetails.checkAge();
-		assertEquals(22, expected);
+		int actual=22;
+		assertEquals(actual, expected);
 		
 	}
 	
 	@Test 
 	public void checkSalary() {
 		long expected=StudentDetails.checkSalary();
-		assertEquals(50000, expected);
+		long actual=50000;
+		assertEquals(actual, expected);
 	}
 
 }
