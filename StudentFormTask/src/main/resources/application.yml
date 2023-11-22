@@ -1,0 +1,25 @@
+
+server:
+  port: '8083'
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/studentdb'
+    username: postgres
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  
+logging:
+  level:
+    root: INFO
+    com:
+      product: TRACE
+  
+  file:
+    name: C:\studentlogger.log
